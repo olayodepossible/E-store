@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="productsService" />
+        <module name="ApiGateway" />
         <module name="discovery-server" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="productsService" options="-parameters" />
